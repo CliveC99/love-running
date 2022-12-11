@@ -4,21 +4,18 @@
     margin: 0;
     padding: 0;
     border: none;
-
 }
 
-
-
 body {
-    font-family: lato, sans-serif;
+    font-family: Lato, sans-serif;
     font-weight: 300;
     color: #3a3a3a;
 }
 
-/* heading and logo */
+/* headings and logo */
 
 h1, h2 {
-    font-family: oswald, sans-serif;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
@@ -31,6 +28,7 @@ h1, h2 {
 }
 
 /* navigation links */
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -85,7 +83,6 @@ h1, h2 {
 }
 
 /* creates the level of zoom for hero image */
-
 @keyframes hero-zoom {
     from{
         transform: scale(1);
@@ -97,12 +94,13 @@ h1, h2 {
 
 #cover-text {
     font-size: 130%;
-    font-family: oswald, sans-serif;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
 
     width: 300px;
     height: 200px;
+
     padding-top: 40px;
     padding-left: 10px;
 
@@ -137,13 +135,6 @@ h1, h2 {
     margin: 0 auto;
 }
 
-#times > div {
-    width: 100%;
-    clear: both;
-    height: 150px;
-    padding: 0;
-}
-
 hr {
     border-top: 1px solid #3a3a3a;
     width: 100%;
@@ -157,7 +148,6 @@ hr {
     clear: both;
     margin-bottom: 50px;
 }
-
 
 .right-about-heading {
     width: 60%;
@@ -182,14 +172,14 @@ hr {
 }
 
 #circle-container {
-     width: 300px;
-     height: 300px;
-     padding: 30px;
-     border-style: solid;
-     border-color: #ccc;
-     border-width: 1px;
-     border-radius: 50%;
-     margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 0 auto;
 }
 
 #circle-cover-bg {
@@ -201,7 +191,7 @@ hr {
 /* event times */
 
 #times {
-    background-image: url(../images/dublin-city.webp);
+    background-image: url('../images/dublin-city.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -215,8 +205,7 @@ hr {
     width: 20%;
     height: 300px;
     float: left;
-    padding-top: 30px;
-    padding-left: 10px;
+    padding: 30px 0 0 10px;
     text-align: center;
     border: 2px solid white;
     box-sizing: border-box;
@@ -227,12 +216,13 @@ hr {
 }
 
 /* footer */
+
 footer {
     height: 150px;
 }
 
 .social-networks {
-    text-align: center;   
+    text-align: center;
 }
 
 .social-networks > li {
@@ -257,13 +247,12 @@ footer {
 
 #photos > img {
     width: 100%;
-
 }
 
-/* media queries */
+/* Media queries */
 
-/* for larger to medium screen sizes from 1200px wide and down */
- @media screen and (max-width: 1200px) {
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1200px) {
     #club-ethos {
         width: 65%;
         height: 1200px;
@@ -288,13 +277,20 @@ footer {
         padding: 0;
     }
 
+    #times > div {
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0;
+    }
+
     hr {
         display: none;
     }
- }
+}
 
- /* for medium screen sizes from 950px wide and down */
- @media screen and (max-width: 950px) {
+/* For medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
 
     #menu {
         clear: left;
@@ -302,7 +298,6 @@ footer {
         margin-left: 30px;
         margin-bottom: 20px;
         line-height: 25px;
-
     }
 
     #cover-text {
@@ -326,6 +321,13 @@ footer {
 
     .left-about-heading p, .right-about-heading p {
         text-align: center;
-        padding-left: 0 20px;
+        padding: 0 20px;
     }
- }
+}
+
+/* For small screen sizes below 800px width */
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
+    }
+}
